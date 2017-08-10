@@ -17,19 +17,13 @@ for iter = 1:num_iters
     %       of the cost function (computeCost) and gradient here.
     %
 
-    % X(:,1) is all 1's
-
     X_col1 = X(:,1);
     X_col2 = X(:,2);
-    h = theta(1) * X_col1 + theta(2) * X_col2;
 
+    h = theta(1) * X_col1 + theta(2) * X_col2;
 
     theta(1) = theta(1) - alpha * (1/m) * sum(h-y);
     theta(2) = theta(2) - alpha * (1/m) * sum((h-y) .* X_col2);
-
-    disp(theta)
-
-
 
     % ============================================================
 

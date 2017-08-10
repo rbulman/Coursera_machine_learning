@@ -12,10 +12,9 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
+% sum(A,2) means sum along rows (sum(A,1) would be sum along columns)
 
 J = (1/(2*m)) * sumsq((sum(X*theta, 2) - y))
-
-
 
 % =========================================================================
 
